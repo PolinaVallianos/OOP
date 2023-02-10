@@ -52,6 +52,9 @@ class Program
 
         petya.Perent1 = petya;
 
+        Rectangle rectangle = new Rectangle(12, 13, 2, 1);
+        Console.WriteLine(rectangle.Square);
+
     }
 
     //в метод передается ссылка на объект и его внутренние данные можно изменить

@@ -1,19 +1,19 @@
 ﻿using System;
 namespace Lesson16
 {
-	public class Shape
+	//abstract class - класс у которого один или более методов абстрактный
+	//нельзя создать экземпляр абстрактного класса
+	public abstract class Shape
 	{
-		private int square;
 		private Point center;
 
-        public int Square { get => square; set => square = value; }
+        public abstract int Square { get; }
 
         public Shape(int x, int y)
 		{
 			center = new Point();
 			center.X = x;
 			center.Y = y;
-
 		}
 
         public class Point
