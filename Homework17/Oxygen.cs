@@ -15,14 +15,21 @@ namespace Homework17
 
 		public void React(Hydrogen hydrogen)
 		{
-			if (this.hydrogen1 == null)
+			if (hydrogen.Oxygen1 != null) return;
+
+			if (hydrogen1 == null)
 			{
 				hydrogen1 = hydrogen;
+				hydrogen1.Oxygen1 = this;
 				return;
 			}
 
-			hydrogen2 = hydrogen;
-		}
+            if (hydrogen2 == null)
+            {
+                hydrogen2 = hydrogen;
+				hydrogen2.Oxygen1 = this;
+            }
+        }
 
     }
 }
