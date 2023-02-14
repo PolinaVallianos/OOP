@@ -1,4 +1,6 @@
-﻿namespace Homework16;
+﻿using Homework16a;
+namespace Homework16;
+
 class Program
 {
     static void Main(string[] args)
@@ -20,6 +22,8 @@ class Program
         ChageCarriage(train.GetCarriage(2), carriageRest);
         ChageCarriage(train.GetCarriage(7), new Carriage(Carriagetype.Restaurant);
         train.Print();
+
+        
     }
 
     static void ChageCarriage(Carriage? oldC, Carriage? newC)
