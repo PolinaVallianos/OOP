@@ -13,6 +13,7 @@ namespace Lesson19
 		public Enemy(int x, int y, int health) : base(x, y)
 		{
 			direction = new Vector2(0, 0);
+			this.health = health;
 		}
 		public void Move()
 		{
