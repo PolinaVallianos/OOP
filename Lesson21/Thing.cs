@@ -5,7 +5,7 @@ namespace Lesson21
 	public class Thing : IPrintable
 	{
 		//статические члены класса являются общими для всех экземпляров (объектов класса)
-		//статические поле буддет одно для всех экземпляров
+		//статические поле будет одно для всех экземпляров
 		private static int counter;
 		public static int Counter { get => counter; }
 
